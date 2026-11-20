@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — 55 Trophies, Roadmap, Missables</title>
+<meta name="description" content="Complete offline trophy guide and tracker for all 55 GTA VI PlayStation 5 trophies: saved checklist, roadmap to the platinum, missable flags, filters and per-trophy guides with sources.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="titleblock">
+    <h1>GTA&nbsp;VI Trophy Guide &amp; Tracker</h1>
+    <p class="sub">All 55 PlayStation&nbsp;5 trophies — guide, tracker, roadmap to the platinum. Works fully offline.</p>
+  </div>
+  <div class="progressbox" id="progressbox" aria-live="polite">
+    <div class="pnum" id="progress">0 / 55</div>
+    <div class="plabel">earned</div>
+    <div class="pbar"><div class="pfill" id="pfill"></div></div>
+  </div>
+</header>
+
+<nav class="controls" aria-label="Tracker controls">
+  <input id="search" type="search" placeholder="Search trophies…" aria-label="Search trophies">
+  <label>Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label>Kind
+    <select id="kind">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="mission">Mission</option>
+      <option value="missable">Missable</option>
+      <option value="collectible">Collectibles</option>
+      <option value="side">Side content</option>
+      <option value="misc">Misc</option>
+    </select>
+  </label>
+  <label class="chk"><input id="hideDone" type="checkbox"> Hide earned</label>
+  <label class="chk"><input id="spoiler" type="checkbox"> Spoiler-free (hide story guides)</label>
+  <button id="export" type="button">Export progress</button>
+  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+  <button id="reset" type="button" class="danger">Reset</button>
+</nav>
+
+<section id="roadmap" class="roadmap">
+  <h2>Roadmap to the Platinum <span class="hint">— earn in this order, ~2–3 playthroughs</span></h2>
+  <ol id="roadlist"></ol>
+</section>
+
+<main>
+  <div id="summary" class="summary" hidden></div>
+  <div id="list" class="trophies"></div>
+</main>
+
+<footer>
+  <p>Unofficial fan guide. Not affiliated with Rockstar Games or Take-Two Interactive. Trophy names and official descriptions © their owners; guide text written for this entry, drawing on the public PlayStation trophy list and community guides (links in each trophy's guide). Progress is saved only in your browser (localStorage) — nothing is uploaded.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
